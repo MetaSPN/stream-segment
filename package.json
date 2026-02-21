@@ -1,0 +1,60 @@
+{
+  "name": "segment-stream",
+  "version": "1.0.0",
+  "description": "Colbert-style segment video assembly (script → slides + TTS → MP4) and RTMP streaming",
+  "type": "module",
+  "main": "lib/config.mjs",
+  "exports": {
+    ".": "./lib/config.mjs",
+    "./config": "./lib/config.mjs",
+    "./generators/script": "./generators/script.mjs",
+    "./generators/tts": "./generators/tts.mjs",
+    "./generators/json-segment": "./generators/json-segment.mjs",
+    "./templates/price-alert": "./templates/price-alert.mjs"
+  },
+  "bin": {
+    "assemble-segment": "./cli/assemble-segment.mjs",
+    "assemble-mood-short": "./cli/assemble-mood-short.mjs",
+    "go-live": "./cli/go-live.mjs",
+    "stream-scheduler": "./cli/stream-scheduler.mjs",
+    "stream-engine": "./engine/stream-engine.mjs",
+    "recursive-stream": "./cli/recursive-stream.mjs",
+    "materialize": "./library/materialize.mjs",
+    "update-rtmp-destinations": "./rtmp/update-destinations.mjs"
+  },
+  "files": [
+    "lib",
+    "cli",
+    "generators",
+    "templates",
+    "library",
+    "engine",
+    "rtmp",
+    "assets",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "video",
+    "streaming",
+    "rtmp",
+    "tts",
+    "elevenlabs",
+    "ffmpeg",
+    "segment",
+    "slides"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leoguinan/clawd"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "optionalDependencies": {
+    "@anthropic-ai/sdk": "^0.32.0"
+  }
+}

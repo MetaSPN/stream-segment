@@ -1,0 +1,25 @@
+{
+  "destinations": [
+    {
+      "name": "YouTube",
+      "enabled": false,
+      "rtmp": "rtmp://a.rtmp.youtube.com/live2/",
+      "key": "",
+      "notes": "Get stream key from YouTube Studio"
+    },
+    {
+      "name": "Twitch",
+      "enabled": false,
+      "rtmp": "rtmp://live.twitch.tv/app/",
+      "key": "",
+      "notes": ""
+    },
+    {
+      "name": "Kick",
+      "enabled": false,
+      "rtmp": "rtmp://fa723fc1b171.global-contribute.live-video.net/app/",
+      "key": "",
+      "notes": ""
+    }
+  ]
+}
