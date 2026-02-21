@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Local output when running CLIs from repo (default SEGMENT_STREAM_OUTPUT)
+.segment-stream/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# OS and editor
+.DS_Store
+*.log
+npm-debug.log*

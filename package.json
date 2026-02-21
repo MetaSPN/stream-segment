@@ -31,7 +31,8 @@
     "engine",
     "rtmp",
     "assets",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "engines": {
     "node": ">=18"
@@ -49,7 +50,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/leoguinan/clawd"
+    "url": "https://github.com/MetaSPN/stream-segment"
   },
   "publishConfig": {
     "access": "public"
